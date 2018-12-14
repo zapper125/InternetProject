@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0236993A21C43DE000C55CF0 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236993921C43DE000C55CF0 /* InternetDetailViewController.swift */; };
+		0236993D21C445BE00C55CF0 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236993C21C445BE00C55CF0 /* InternetMasterViewController.swift */; };
 		023880F621C1AC5100627AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023880F521C1AC5100627AC6 /* AppDelegate.swift */; };
 		023880F821C1AC5100627AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023880F721C1AC5100627AC6 /* ViewController.swift */; };
 		023880FB21C1AC5100627AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023880F921C1AC5100627AC6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0236993921C43DE000C55CF0 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		0236993C21C445BE00C55CF0 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		023880F221C1AC5100627AC6 /* InternetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023880F521C1AC5100627AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023880F721C1AC5100627AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0236993621C43D8100C55CF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				023880F721C1AC5100627AC6 /* ViewController.swift */,
+				0236993921C43DE000C55CF0 /* InternetDetailViewController.swift */,
+				0236993C21C445BE00C55CF0 /* InternetMasterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0236993B21C4442600C55CF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				023880FC21C1AC5B00627AC6 /* Assets.xcassets */,
+				023880F521C1AC5100627AC6 /* AppDelegate.swift */,
+				0238810121C1AC5B00627AC6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		023880E921C1AC5100627AC6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +78,9 @@
 		023880F421C1AC5100627AC6 /* InternetProject */ = {
 			isa = PBXGroup;
 			children = (
-				023880F521C1AC5100627AC6 /* AppDelegate.swift */,
-				023880F721C1AC5100627AC6 /* ViewController.swift */,
+				0236993621C43D8100C55CF0 /* Controller */,
+				0236993B21C4442600C55CF0 /* Resources */,
 				02546E9021C4370300AD4346 /* New Group */,
-				023880FC21C1AC5B00627AC6 /* Assets.xcassets */,
-				0238810121C1AC5B00627AC6 /* Info.plist */,
 			);
 			path = InternetProject;
 			sourceTree = "<group>";
@@ -144,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				023880F821C1AC5100627AC6 /* ViewController.swift in Sources */,
+				0236993D21C445BE00C55CF0 /* InternetMasterViewController.swift in Sources */,
+				0236993A21C43DE000C55CF0 /* InternetDetailViewController.swift in Sources */,
 				023880F621C1AC5100627AC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
