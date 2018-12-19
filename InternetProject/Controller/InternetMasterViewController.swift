@@ -60,7 +60,34 @@ public class InternetMasterViewController: UITableViewController
 
     // MARK: - Table view data source
 
-
+    public override func  viewWillAppear(_ animated: Bool) -> Void
+    {
+        clearsSelectionOnViewWillAppear = splitViewController!.isColapsed
+        
+        super.viewWillAppear(animated)
+        
+    }
+    
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->
+    {
+        return addresses.count
+    }
+    
+    public override func tabelView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell  = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let rowText = internetTopics[indexPath.row]
+        cell.textLabel!.text = rowText
+        return cell
+    }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        internetDetail?.detailaddress = addresses[indexPath.row]
+        internetDetail?.detailTitle = internetTopics[indexPath.row]
+        if (internetDetail != nil)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
