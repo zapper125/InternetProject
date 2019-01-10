@@ -62,18 +62,18 @@ public class InternetMasterViewController: UITableViewController
 
     public override func  viewWillAppear(_ animated: Bool) -> Void
     {
-        clearsSelectionOnViewWillAppear = splitViewController!.isColapsed
+        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         
         super.viewWillAppear(animated)
         
     }
     
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return addresses.count
     }
     
-    public override func tabelView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
@@ -84,9 +84,12 @@ public class InternetMasterViewController: UITableViewController
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        internetDetail?.detailaddress = addresses[indexPath.row]
+        internetDetail?.detailAddress = addresses[indexPath.row]
         internetDetail?.detailTitle = internetTopics[indexPath.row]
         if (internetDetail != nil)
+        {
+            splitViewController?.showDetailViewController(internetDetail!, sender: nil)
+        }
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

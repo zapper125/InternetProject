@@ -12,8 +12,8 @@ import WebKit
 public class InternetDetailViewController: UIViewController
 {
     
-    @IBOutlet weak var webViewer: WKWebView!
     @IBOutlet weak var screenTitle: UILabel!
+    @IBOutlet weak var webViewer: WKWebView!
     
     var detailTitle : String?
     {

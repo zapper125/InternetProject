@@ -13,7 +13,6 @@
 		023880F821C1AC5100627AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023880F721C1AC5100627AC6 /* ViewController.swift */; };
 		023880FB21C1AC5100627AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023880F921C1AC5100627AC6 /* Main.storyboard */; };
 		023880FD21C1AC5B00627AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023880FC21C1AC5B00627AC6 /* Assets.xcassets */; };
-		0238810021C1AC5B00627AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023880FE21C1AC5B00627AC6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		023880F721C1AC5100627AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		023880FA21C1AC5100627AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		023880FC21C1AC5B00627AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		023880FF21C1AC5B00627AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0238810121C1AC5B00627AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 		02546E9021C4370300AD4346 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				023880FE21C1AC5B00627AC6 /* LaunchScreen.storyboard */,
 				023880F921C1AC5100627AC6 /* Main.storyboard */,
 			);
 			path = "New Group";
@@ -152,7 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0238810021C1AC5B00627AC6 /* LaunchScreen.storyboard in Resources */,
 				023880FD21C1AC5B00627AC6 /* Assets.xcassets in Resources */,
 				023880FB21C1AC5100627AC6 /* Main.storyboard in Resources */,
 			);
@@ -181,14 +177,6 @@
 				023880FA21C1AC5100627AC6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		023880FE21C1AC5B00627AC6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				023880FF21C1AC5B00627AC6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -315,7 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InternetProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InternetProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
